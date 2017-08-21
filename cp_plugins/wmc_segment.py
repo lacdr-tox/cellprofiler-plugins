@@ -122,7 +122,7 @@ class WMC_Segment(cpm.CPModule):
         return result
 
     def run(self, workspace):
-        import cellprofiler.utilities.jutil as jb
+        import javabridge.jutil as jb
         jb.attach()#initialize JVM
 
         #get settings and parameters from GUI components

@@ -62,7 +62,7 @@ class SaveImagesDBM(cpm.CPModule):
         return result
 
     def run(self, workspace):
-        import cellprofiler.utilities.jutil as jb
+        import javabridge.jutil as jb
 
         measurements = workspace.measurements
         #pathname = measurements.get_measurement(cpmeas.IMAGE, pathname_feature)

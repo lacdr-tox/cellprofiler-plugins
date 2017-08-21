@@ -26,7 +26,7 @@ class kde_tracking(cpm.CPModule):
     def run(self, workspace):
         print self.get_dictionary(workspace.image_set_list)
         
-        import cellprofiler.utilities.jutil as jb
+        import javabridge.jutil as jb
         jb.attach()#initialize JVM
 
         input_image_name = self.input_image_name.value

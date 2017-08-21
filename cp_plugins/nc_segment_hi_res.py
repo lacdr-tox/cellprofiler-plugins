@@ -118,7 +118,7 @@ class NC_Segment_Hi_Res(cpm.CPModule):
         return result
 
     def run(self, workspace):
-        import cellprofiler.utilities.jutil as jb
+        import javabridge.jutil as jb
         
         jb.attach()#initialize JVM
         

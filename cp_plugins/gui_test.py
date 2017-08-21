@@ -143,7 +143,7 @@ class GUI_Test(cpm.CPModule):
             print ('hash check not ok')
 
     def run(self, workspace):
-        import cellprofiler.utilities.jutil as jb
+        import javabridge.jutil as jb
         jb.attach()#initialize JVM
         image_set = workspace.image_set
         assert isinstance(image_set, cpi.ImageSet)

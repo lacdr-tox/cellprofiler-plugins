@@ -87,7 +87,7 @@ class sz_segment(cpm.CPModule):
         return result
 
     def run(self, workspace):
-        import cellprofiler.utilities.jutil as jb
+        import javabridge.jutil as jb
         jb.attach()#initialize JVM
         
         cyto_mask_image_name = self.input_cyto_mask_image_name.value

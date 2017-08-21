@@ -10,7 +10,7 @@ import cellprofiler.cpmodule as cpm
 import cellprofiler.measurements as cpmeas
 from cellprofiler.modules.loadimages import C_FILE_NAME, C_PATH_NAME#constant value for file and path group
 import tempfile
-import cellprofiler.utilities.jutil as jb#java bridge
+import javabridge.jutil as jb#java bridge
 import ConfigParser as inicp#ini parser
 from suds.client import Client as wsclient#web service client
 import hashlib, uuid

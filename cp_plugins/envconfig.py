@@ -11,7 +11,7 @@ import cellprofiler.cpimage as cpi
 import cellprofiler.cpmodule as cpm
 import cellprofiler.measurements as cpmeas
 from cellprofiler.modules.loadimages import C_FILE_NAME, C_PATH_NAME
-import cellprofiler.utilities.jutil as jb
+import javabridge.jutil as jb
 import imagej.windowmanager as ijwm
 import imagej.imageprocessor as ijiproc
 

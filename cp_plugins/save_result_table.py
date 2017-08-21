@@ -28,7 +28,7 @@ class Save_Result_Table(cpm.CPModule):
         
         
         measurements = workspace.measurements
-        import cellprofiler.utilities.jutil as jb
+        import javabridge.jutil as jb
         jb.attach()#initialize JVM
 
         input_image_name = self.input_image_name.value
