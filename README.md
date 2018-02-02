@@ -1,6 +1,11 @@
 # CellProfiler plugins
 
-## Installation
+## Installation (conda)
+
+Use the commands at top of `cp_environment.yml` to create conda environment. 
+Make sure that it doesn't use packages from your `~/.local` python environment.
+
+## Installation (old way)
 
 1. When you start CellProfiler set the *CellProfiler plugins directory* to the `cp_plugins` directory, and the *ImageJ plugin directory* to the `ij_plugins` directory.
 1. Set the `CLASSPATH` environment variable to include the jars `DImageSVN_.jar` and `jsch.jar` in the `jarlib` directory.
@@ -22,3 +27,4 @@
 
 
 3. (Linux) Make sure python-suds is available.
+

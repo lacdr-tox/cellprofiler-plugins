@@ -1,0 +1,48 @@
+# run: conda env create -f environment.yml
+# run: conda env update -f environment.yml
+# run: conda env remove -n cellprofiler2
+name: cellprofiler2
+# in order of priority: lowest (top) to highest (bottom)
+channels:
+  - anaconda
+  - goodman # mysql-python for mac
+  - bioconda
+  - bjornfjohansson # wxpython 3.0.2.0 for linux
+  - conda-forge
+  - cyclus
+dependencies:
+  - appdirs
+  - cython
+  - h5py
+  - ipywidgets
+  - java-jdk
+  - jupyter
+  - libtiff
+  - libxml2
+  - libxslt
+  - lxml
+  - packaging
+  - pillow
+  - pip
+  - python=2
+  - pyzmq=15.3.0
+  - mahotas
+  - matplotlib!=2.1.0,>2.0.0
+  - mysql-python
+  - numpy
+  - raven
+  - requests
+  - scikit-image
+  - scikit-learn
+  - scipy
+  - sphinx
+  - tifffile
+  - wxpython=3.0.2.0
+  - pip:
+    - "git+https://github.com/LeeKamentsky/python-javabridge.git@issue-121#egg=javabridge-issue-121" # fix jni.h problems
+    - cellh5
+    - centrosome
+    - inflect
+    - prokaryote==2.3.2
+    - python-bioformats==1.3.1
+    - "git+https://github.com/burgerga/CellProfiler.git@v2.2.1_dds#egg=cellprofiler-v2.2.1_dds" # fix matplotlib problems in test mode
